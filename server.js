@@ -83,3 +83,6 @@ app.get('/calculate', (req, res) => {
 app.listen(PORT, () => {
     console.log(`✅ Server is running on http://localhost:${PORT}`);
 });
+app.get('/health', (req, res) => {
+    res.status(200).send('Healthy');
+});
